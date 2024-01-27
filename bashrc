@@ -17,6 +17,13 @@ DISPLAY=1 SSH_ASKPASS="~/ssh-add-pw.sh" ssh-add ${KEY_FILE}
 ### auth to github with key
 ssh -T git@github.com
 
+### git configurations
+git config --global core.editor vim
+git config --global user.name "sk8forether"
+git config --global user.email "peter.vaillancourt@colorado.edu"
+git config --global color.ui true
+git config --global push.default simple
+
 ## starting point
 #cd /lustre/Development/NOAA-PSL/graph-ufs/
 #git status
