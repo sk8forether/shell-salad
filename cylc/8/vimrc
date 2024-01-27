@@ -1,0 +1,18 @@
+syntax on
+set number
+set tabstop=4
+set expandtab
+set hls
+set ruler
+
+augroup filetype
+    au! BufRead,BufnewFile *suite*.rc   set filetype=cylc
+    au! BufRead,BufnewFile *.cylc   set filetype=cylc
+augroup END
+
+if has("folding") | set foldlevelstart=99 | endif
+
+hi Statement guifg=#22a8e3 gui=bold
+hi Normal guifg=#9096a4
+hi Comment guifg=#ff6900
+hi Type guifg=#28d45b gui=bold"
